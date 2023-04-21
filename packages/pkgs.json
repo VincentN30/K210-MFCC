@@ -1,0 +1,17 @@
+[
+ {
+  "path": "/packages/multimedia/wavplayer", 
+  "ver": "latest", 
+  "name": "WAVPLAYER"
+ }, 
+ {
+  "path": "/packages/peripherals/kendryte-sdk/K210-SDK/kendryte-sdk", 
+  "ver": "v0.5.7", 
+  "name": "KENDRYTE_SDK"
+ }, 
+ {
+  "path": "/packages/misc/optparse", 
+  "ver": "latest", 
+  "name": "OPTPARSE"
+ }
+]

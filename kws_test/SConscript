@@ -1,0 +1,9 @@
+from building import *
+import os
+cwd     = GetCurrentDir()
+src     = Glob('*.c')  + Glob('./*/*.c') + Glob('./*/*/*.c')
+CPPPATH = [cwd]
+CPPPATH += [os.path.join(cwd,'kws_test'),os.path.join(cwd,'mnist_test'),os.path.join(cwd,'dsp/include'),os.path.join(cwd,'arm_nn')]
+group = DefineGroup('KWS_TEST', src, depend = [''], CPPPATH = CPPPATH)
+
+Return('group')
